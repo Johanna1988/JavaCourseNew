@@ -1,8 +1,11 @@
 package main.java;
 import java.util.Scanner;
 public class Calculator {
+
     public static void main(String[] args) {
-        int number1, number2, result;
+        int number1;
+        int number2;
+        int result;
         char action;
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter first number");
@@ -14,24 +17,25 @@ public class Calculator {
         switch (action) {
             case '/':
                 result = number1 / number2;
-                System.out.println("The result is:");
+                System.out.println("The result is: ");
                 System.out.println(number1 + " / " + number2 + " = " + result);
                 break;
             case '*':
                 result = number1 * number2;
-                System.out.println("The result is:");
+                System.out.println("The result is: ");
                 System.out.println(number1 + " * " + number2 + " = " + result);
                 break;
             case '-':
                 result = number1 - number2;
-                System.out.println("The result is:");
+                System.out.println("The result is: ");
                 System.out.println(number1 + " - " + number2 + " = " + result);
                 break;
             case '+':
                 result = number1 + number2;
-                System.out.println("The result is:");
+                System.out.println("The result is: ");
                 System.out.println(number1 + " + " + number2 + " = " + result);
                 break;
+
         }
     }
 }
