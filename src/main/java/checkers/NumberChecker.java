@@ -8,17 +8,19 @@ public class NumberChecker {
         System.out.println("Please enter your number");
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
-        if (number < 0 )
+        if (number < 0) {
             System.out.println("Your number is negative");
-        else if (number > 0 )
+        } else if (number > 0) {
             System.out.println("Your number is positive");
-
+        } else {
+            System.out.println("You have entered zero");
+        }
         System.out.println("Please enter your number");
-        Scanner scan2 = new Scanner(System.in);
-        int number2 = scan2.nextInt();
-        if (number2 % 2 == 0 )
-            System.out.println("Your number even ");
-        else if (number2 % 2 == 1 )
+        int number2 = scan.nextInt();
+        if (number2 % 2 == 0) {
+            System.out.println("Your number is even");
+        } else {
             System.out.println("Your number is odd");
         }
     }
+}
